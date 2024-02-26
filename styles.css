@@ -12,12 +12,11 @@ body{
 }
 
 .boton{
-    padding: 0.5rem;
+    padding: 0.2rem;
     border: solid 1px #1b3b90;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #1b3b90;
     color: aliceblue;
-    font-size: x-large;
     text-decoration: none;
 }
 .boton:hover{
@@ -25,360 +24,74 @@ body{
     color: #0056b3;
 }
 
-
-
-/*Header*/
-.nav_logo{
-    width: 500px;
-    height: 300px;
-}
-header{
-    color: black;
-    font-size: x-large;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-header nav h1{
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-}
-header nav ul{
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+ul li{
     list-style: none;
-}
-header li a{
-    color: #1b3b90;
     text-decoration: none;
-    list-style: none;
 }
-header li a:hover{
-    background-color: #1b3b90;
-    color: white;
-    border: #1b3b90 solid 3px;
-    border-radius: 15px;
+ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/*-Header-*/
+.nav_logo{
+    width: 250px;
+    height: 150px;
     padding: 0.5rem;
 }
-
-
-
-
-/*-Main-*/
-
-main h3{
-    font-size: xx-large;
-}
-main section div h4{
-    display: flex;
-    padding: 1rem;
-    font-size: x-large;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/*-Main section 1-*/
-.titulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: xx-large;
-    padding-top: 2rem;
-}
-.grid_container_1{
-    display: grid;
-    padding: 1rem;
-    grid-template-rows: 0.1fr 2fr;
-    grid-template-columns: repeat(2, 1fr);
-}
-.grid_container_1 h3{
+header h1{
     display: flex;
     justify-content: center;
 }
-.text_container{
-    padding: 1rem;
-    font-size: x-large;
-    text-align: justify;
-}
-.text_container{
-    padding: 1rem;
-    font-size: x-large;
-    text-align: justify;
-}
-
-/*-Main Section 2-*/
-
-.grid_container_2{
-    margin: 1rem;
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(2, 50%);
-
-}
-.grid_container_2 div{
-    border: solid black 5px;
-    grid-row: 1 / span 3;
-    grid-column: 2;
-    margin: 1rem;
-}
-main section iframe{
-    height: 100%;
-    width: 100%;
-}
-.grid_container_2 h2{
+header ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
-
-}
-.grid_container_2 p{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-    font-size: larger;
-}
-
-
-
-
-/*-Footer-*/
-
-.foot_container{
-    display: grid;
-    grid-template-columns: 0.33fr 0.33fr 0.33fr;
-    grid-template-rows: 0.25fr 0.75fr;
-    padding: 1rem;
-}
-.foot_horarios{
-    font-size: x-large;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
     gap: 1rem;
-    padding: 1rem;
-}
-.foot_horarios h4{
-    font-size: xx-large;
-}
 
-.foot_redes{
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 25% 75%;
-    justify-content: center
 }
-.foot_redes h4{
-    font-size: xx-large;
-    grid-column: 1/3;
+/*-Hader Tablet-*/
+@media (min-width: 768px){
+    .nav_logo{
+        width: 450px;
+        height: 250px;
+        padding: 0.5rem;
+    }
+    header h1{
+        display: flex;
+        justify-content: center;
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        font-size: x-large;
+    }
 }
-
-.bi-instagram{
-    padding-top: 1rem;
-    font-size: xx-large;
-    display: flex;
-    justify-content: start;
-    text-decoration: none;
-    color: #1b3b90;
-}
-.bi-facebook{
-    padding-top: 1rem;
-    font-size: xx-large;
-    display: flex;
-    justify-content: start;
-    text-decoration: none;
-    color: #1b3b90;
-}
-
-.foot_comunicaciones{
-    font-size: x-large;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    gap: 1rem;
-    padding: 1rem;
-}
-.foot_comunicaciones h4{
-    font-size: xx-large;
-}
-.bi-whatsapp{
-    text-decoration: none;
-    font-size: x-large;
-    color: #0056b3;
+/*-Hader Desktop-*/
+@media (min-width: 1200px){
+    .nav_logo{
+        width: 450px;
+        height: 250px;
+        padding: 0.5rem;
+    }
+    header h1{
+        display: flex;
+        justify-content: center;
+    }
+    header ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
 }
 
 
-
-
-
-/* Formulario footer */
-.foot_form{
-    border: solid 5px black;
-    padding: 1rem;
-    grid-column: 1/4;
-    text-align: center;
-}
-.foot_form h4 {
-    font-size: x-large;
-    margin-bottom: 10px;
-}
-
-.foot_form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.foot_form input[type="text"],
-.foot_form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: medium;
-}
-.foot_form label{
-    font-size: x-large;
-}
-.foot_form input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #1b3b90;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: x-large;
-    cursor: pointer;
-}
-
-.foot_form input[type="submit"]:hover {
-    background-color: #1b3b90;
-}
-
-
-
-
-/*- Servicios -*/
-
-.servi_container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.10fr 0.30fr 0.30fr 0.30fr ;
-    padding: 1rem;
-}
-
-.servi_container h2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: xx-large;
-    grid-column: 1/3;
-}
-
-.tarjeta_servi_container{
-    border: solid 5px black;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 1rem;
-    text-align: justify;
-}
-.tarjeta_servi_container_1{
-    grid-column: 1/3;
-    border: solid 3px black;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 1rem;
-}
-
-.tarjeta_servi_container img{
-    height: 70%;
-    width: 70%;
-}
-
-
-
-/* - Productos - */
-.produ_container{
-    display: grid;
-    grid-template-rows: 0.10fr 0.30fr 0.30fr 0.30fr;
-    grid-template-columns: repeat(4, 1fr)
-}
-.produ_container h2{
-    grid-column: 1/5;
-}
-
-.tarjeta_produ_container{
-    border: solid 3px black;
-    padding: 1rem;
-    margin: 1rem;
-    gap: 1rem;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 0.10fr 0.40fr 0.40fr 0.10fr;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
-}
-.tarjeta_produ_container h3{
-    font-size: xx-large;
-}
-.tarjeta_produ_container h5{
-    font-size: x-large;
-}
-
-.tarjeta_produ_container img{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/4;
-}
-
-
-
-/*- Noticias -*/
-
-.noti_container h2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;font-size: xx-large;
-    grid-column: 1/5;
-}
-
-.noti_container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: .10fr .90fr;
-}
-
-.tarjeta_noti_container{
-    border: solid 3px black;
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 10px;
-}
-
-.noti_container img{
-    width: 80%;
-    height: 80%;
-}
-
+/*-Main index-*/
